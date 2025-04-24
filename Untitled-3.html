@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Challenges: Internal Combustion Engines in China</title>
+<style type="text/css">
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .infographic-container {
+        width: 1000px;
+        background-color: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .infographic-container:hover {
+        transform: translateY(-5px);
+    }
+    
+    .page-title {
+        padding: 30px 20px 10px;
+        color: #333;
+        text-align: center;
+        font-size: 42px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    .page-subtitle {
+        font-style: italic;
+        color: #666;
+        text-align: center;
+        padding: 10px 40px 30px;
+        font-size: 28px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+    }
+    
+    .challenge-section {
+        padding: 0 40px 40px;
+        text-align: center;
+    }
+    
+    .challenge-icon {
+        width: 180px;
+        height: 180px;
+        margin: 20px auto;
+        transition: transform 0.3s ease;
+    }
+    
+    .challenge-icon:hover {
+        transform: scale(1.05);
+    }
+    
+    .challenge-title {
+        color: #d32f2f;
+        font-size: 32px;
+        margin: 20px 0 10px;
+    }
+    
+    .challenge-description {
+        font-size: 24px;
+        color: #555;
+        line-height: 1.5;
+        margin: 10px 0 30px;
+    }
+    
+    /* Navigation Bar Styles (same as before) */
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .nav-item {
+        color: #333;
+        text-decoration: none;
+        font-size: 24px;
+        padding: 12px 25px;
+        border-radius: 50px;
+        background-color: #e0e0e0;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .nav-item:hover {
+        background-color: #d0d0d0;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .nav-item:active {
+        transform: translateY(1px);
+    }
+    
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        background: rgba(255,255,255,0.5);
+        opacity: 0;
+        border-radius: 100%;
+        transform: scale(1, 1) translate(-50%);
+        transform-origin: 50% 50%;
+    }
+    
+    .nav-item:focus:not(:active)::after {
+        animation: ripple 1s ease-out;
+    }
+    
+    @keyframes ripple {
+        0% {
+            transform: scale(0, 0);
+            opacity: 0.5;
+        }
+        100% {
+            transform: scale(20, 20);
+            opacity: 0;
+        }
+    }
+    
+    .current-page {
+        background-color: #d32f2f;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+<div class="infographic-container">
+    <!-- Navigation Bar -->
+    <div class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="challenges.html" class="nav-item current-page">Challenges</a>
+        <a href="potentials.html" class="nav-item">Potentials</a>
+        <a href="opportunities.html" class="nav-item">Opportunities</a>
+        <a href="conclusion.html" class="nav-item">Conclusion</a>
+    </div>
+    
+    <h1 class="page-title">Challenges</h1>
+    
+    <p class="page-subtitle">Why Gas Engines Are Under Pressure</p>
+    
+    <div class="challenge-section">
+      <img src="pngtree-logo-speedometer-vector-png-image_9468179.png" class="challenge-icon" alt="Fuel Efficiency">
+        <h2 class="challenge-title">Strict Fuel Rules</h2>
+        <p class="challenge-description">China's laws demand cars use less fuel.<br>
+        By 2025, new cars must average 4 liters per 100 km—<br>
+        (that's tough for gas engines alone)</p>
+  </div>
+    
+    <div class="challenge-section">
+        <img src="pngtree-co2-emissions-icon-png-image_6573856.png" class="challenge-icon" alt="CO2 Emissions">
+        <h2 class="challenge-title">Pollution Laws</h2>
+        <p class="challenge-description">New rules force engines to be almost as clean as electric cars</p>
+  </div>
+    
+    <div class="challenge-section">
+      <img src="pngimg.com - electric_car_PNG9.png" class="challenge-icon" alt="Electric Car">
+        <h2 class="challenge-title">Electric Competition</h2>
+        <p class="challenge-description">China pushes electric cars hard with subsidies and perks</p>
+  </div>
+</div>
+</body>
+</html>
