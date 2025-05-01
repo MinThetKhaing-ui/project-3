@@ -156,27 +156,25 @@
         color: white;
     }
     
-    /* Citation Styles */
-    .citation {
-        font-size: 16px;
-        color: #555;
-        padding: 20px;
-        margin-top: 0;
-        border-top: 1px solid #eee;
-        text-align: left;
-        line-height: 1.6;
-        background-color: #f9f9f9;
+    /* Image caption styles */
+    .image-with-caption {
+        text-align: center;
+        margin: 20px auto;
     }
-    .citation h3 {
-        color: #333;
-        font-size: 18px;
-        margin-top: 0;
+    
+    .image-caption {
+        font-size: 14px;
+        color: #666;
+        margin-top: 8px;
+        line-height: 1.4;
     }
-    .citation a {
+    
+    .image-caption a {
         color: #1565c0;
         text-decoration: none;
     }
-    .citation a:hover {
+    
+    .image-caption a:hover {
         text-decoration: underline;
     }
 </style>
@@ -184,7 +182,15 @@
 
 <body>
 <div class="infographic-container">
-    <img src="pistons-connecting-rods-crankshaft-internal-combustion-engine-black-background-concept-art-operation-v-repair-car-d-258591422.jpg" class="header-image" alt="Internal Combustion Engine">
+    <!-- Main engine image with source -->
+    <figure class="image-with-caption">
+        <img src="pistons-connecting-rods-crankshaft-internal-combustion-engine-black-background-concept-art-operation-v-repair-car-d-258591422.jpg" 
+             class="header-image" 
+             alt="Internal Combustion Engine">
+        <figcaption class="image-caption">
+            Image source: <a href="https://www.shutterstock.com/image-photo/pistons-connecting-rods-crankshaft-internal-combustion-258591422" target="_blank">Shutterstock</a>
+        </figcaption>
+    </figure>
     
     <h1 class="title">Challenges, Potential and Opportunities for Internal Combustion Engines in China</h1>
     
@@ -196,7 +202,15 @@
     
     <p class="explore">Explore how gas engines are evolving</p>
     
-    <img src="red-arrow-down-icon-png-30.png" class="arrow" alt="Scroll Down">
+    <!-- Arrow image with source -->
+    <figure class="image-with-caption">
+        <img src="red-arrow-down-icon-png-30.png" 
+             class="arrow" 
+             alt="Scroll Down Arrow">
+        <figcaption class="image-caption">
+            Icon source: <a href="https://www.pngitem.com/middle/hmRJxwo_red-arrow-down-icon-png-transparent-png/" target="_blank">PNGItem</a>
+        </figcaption>
+    </figure>
     
     <!-- Navigation Bar -->
     <div class="nav-menu">
@@ -207,10 +221,19 @@
         <a href="https://minthetkhaing-ui.github.io/project-3/Conclusion.html" class="nav-item">Conclusion</a>
     </div>
     
-    <!-- APA Citation (placed AFTER nav-menu) -->
-    <div class="citation">
-        <h3>References</h3>
-        <p>Zhao, F., Chen, K., Hao, H., & Liu, Z. (2020). Challenges, potentials, and opportunities for internal combustion engines in China. <i>Sustainability</i>, <i>12</i>(12), 4955. <a href="https://doi.org/10.3390/su12124955">https://doi.org/10.3390/su12124955</a></p>
+    <!-- APA Citation -->
+    <div class="citation" style="
+        font-size: 16px;
+        color: #555;
+        padding: 20px;
+        margin-top: 30px;
+        border-top: 1px solid #eee;
+        text-align: left;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+    ">
+        <h3 style="color: #333; font-size: 18px;">References</h3>
+        <p>Zhao, F., Chen, K., Hao, H., & Liu, Z. (2020). Challenges, potentials, and opportunities for internal combustion engines in China. <i>Sustainability</i>, <i>12</i>(12), 4955. <a href="https://doi.org/10.3390/su12124955" style="color: #1565c0; text-decoration: none;">https://doi.org/10.3390/su12124955</a></p>
     </div>
 </div>
 </body>
